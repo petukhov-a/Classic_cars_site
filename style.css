@@ -36,7 +36,6 @@ body {
     left: 2rem; 
     z-index: 10;
     transition: all 0.5s;
-    display: flex;
     flex-direction: column;
     cursor: pointer;
 }
@@ -72,6 +71,7 @@ body {
     position: fixed;
     top: 0;
     left: -15vw;
+    display: flex;
     flex-direction: column;
     padding: 4rem 0 0 4rem; 
     z-index: 10;
@@ -150,3 +150,67 @@ section.change {
     width: 70%;
 }
 /* End of Section 1 */
+
+/* Section 2 */
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card {
+    width: 50rem;
+    margin: 0 3rem;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0.6rem 0.6rem 0.6rem #bbb;
+    transition: box-shadow 0.5s;
+    position: relative;
+}
+
+.card:hover {
+    box-shadow: 0.8rem 0.8rem 0.8rem #bbb;
+}
+
+.car-name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.card-img {
+    width: 100%;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.card:hover .card-img {
+    opacity: 1;
+}
+
+.car-price {
+    font-weight: 1.8rem;
+    color: #777;
+    margin: 0.5rem 0;
+}
+
+.card-btn {
+    width: 100%;
+    background-color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.3rem #000;
+    box-shadow: 0.1rem 0.1rem 0.5rem #bbb;
+    cursor: pointer;
+}
+/* End of Section 2 */
